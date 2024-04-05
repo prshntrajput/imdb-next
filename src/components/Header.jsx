@@ -3,6 +3,7 @@ import MenuItem from './MenuItem'
 import {AiFillHome} from "react-icons/ai";
 import {BsFillInfoCircleFill} from "react-icons/bs"
 import Link from "next/link"
+import DarkModeSwitch from './DarkModeSwitch';
 
 const Header = () => {
   return (
@@ -18,5 +19,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header
