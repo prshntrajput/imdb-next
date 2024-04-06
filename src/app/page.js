@@ -11,7 +11,7 @@ export default async function Home({searchParams}) {
   throw new Error('Failed to fetch')
  }
  const results = data.results; 
- console.log(results)
+ 
 
   return (
    <div className="bg-slate-600">

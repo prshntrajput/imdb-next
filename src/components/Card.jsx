@@ -14,9 +14,9 @@ const Card = ({result}) => {
                 </Image>
             </Link>
             <div>
-            <p className='line-clamp-2 text-md px-2 my-2 text-sm'>{result.overview}</p>
-            <h2 className='font-bold px-2'>{result.original_title}</h2>
-            <p className='line-clamp-2 text-md px-2 py-1 text-sm flex items-center justify-between'>{result.release_date || result.first_air_date} <span className='flex items-center'><FiThumbsUp className='text-black mr-1'/> {result.vote_count}</span> </p>
+            <p className='line-clamp-2 text-md px-2 text-white my-2 text-sm'>{result.overview}</p>
+            <h2 className='font-bold text-stone-100 hover:text-amber-400 px-2'>{result.original_title}</h2>
+            <p className=' text-white line-clamp-2 text-md px-2 py-1 text-sm flex items-center justify-between'>{result.release_date || result.first_air_date} <span className='flex items-center'><FiThumbsUp className='text-stone-100 mr-1'/> {result.vote_count}</span> </p>
             
             </div>
         </div>

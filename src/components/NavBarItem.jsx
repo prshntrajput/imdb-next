@@ -5,7 +5,7 @@ const NavBarItem = ({param,title}) => {
   return (
     <div>
        <div>
-       <Link href={`/?genre=${param}`}> <h1 className='font-bold hover:underline'>{title}</h1></Link>
+       <Link href={`/?genre=${param}`}> <h1 className='font-bold text-lg hover:underline text-stone-200'>{title}</h1></Link>
         </div>
     </div>
   )
