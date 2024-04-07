@@ -1,5 +1,3 @@
-"use client"
-
 import Results from "@/components/Results";
 import { Suspense } from "react";
 
