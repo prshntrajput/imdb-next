@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import  { Suspense } from 'react'
 
 import NavBarItem from './NavBarItem'
 import { useSearchParams } from 'next/navigation'
@@ -15,4 +15,9 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export function NavBarr(){
+    return(
+                <Suspense>
+                <NavBar/>
+            </Suspense>)
+}
