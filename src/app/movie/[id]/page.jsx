@@ -9,7 +9,7 @@ const MovieDetail = async ({params}) => {
     const res = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`)
 
     const movie = await res.json();
-    console.log(movie)
+    
   return (
     <div className='w-full xl:h-screen h-screen bg-slate-600'>
     <div className='max-w-6xl mx-auto'>
