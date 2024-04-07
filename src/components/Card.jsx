@@ -8,7 +8,7 @@ const Card = ({result}) => {
     <div>
         <div className='mx-2 my-2 bg-slate-400 rounded-md hover:shadow-xl'>
             <Link href={`/movie/${result.id}`} >
-                <Image src={`https://image.tmdb.org/t/p/original/${result.backdrop_path ||
+                <Image alt='image' src={`https://image.tmdb.org/t/p/original/${result.backdrop_path ||
                  result.poster_path}`} width={500} height={300} className='rounded-md'>
 
                 </Image>

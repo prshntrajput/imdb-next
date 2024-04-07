@@ -14,7 +14,7 @@ const MovieDetail = async ({params}) => {
     <div className='w-full xl:h-screen h-screen bg-slate-600'>
     <div className='max-w-6xl mx-auto'>
         <div className='flex items-center justify-center'>
-            <Image src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path ||
+            <Image alt='image' src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path ||
                  movie.poster_path}`} width={500} height={300} className='rounded-md mt-2 shadow-lg'>
             </Image>
         </div>
