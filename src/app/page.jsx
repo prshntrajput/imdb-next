@@ -6,8 +6,11 @@ import axios from "./axios";
 
 const API_KEY = process.env.API_KEY
 
- export default async function Home() {
- const {data} = await axios.get(`/movie/top_rated`);
+ export default async function Home({searchParams}) {
+
+  const genre = searchParams.genre ||'fetchTrending';
+
+ const {data} = await axios.get(`${genre === 'fetchTopRated' ? `/movie/top_rated` : `/trending/all/week`}`);
  if(!data){
   throw new Error('Failed to fetch')
  }
