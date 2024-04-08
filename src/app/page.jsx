@@ -2,19 +2,17 @@
 
 import Results from "@/components/Results";
 import { Suspense } from "react";
+import axios from "./axios";
 
 const API_KEY = process.env.API_KEY
 
  export default async function Home() {
-  
- 
-
- const res = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`);
- const data = await res.json();
- if(!res.ok){
+ const {data} = await axios.get(`/movie/top_rated`);
+ if(!data){
   throw new Error('Failed to fetch')
  }
  const results = data.results; 
+
  
 
   return (
